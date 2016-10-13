@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <base href="/"> -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="http://104.155.207.185:8090/styles/avenir-font.css">
+  <link rel="icon" href="http://104.155.207.185:8090/images/favicon.ico">
+  <title>Travelibro</title>
+  <style>
+
+  .avenir-black {
+    font-family: "AvenirLTStd-Black";
+  }
+  .avenir-heavy {
+    font-family: "AvenirLTStd-Heavy";
+  }
+  .avenir-light {
+    font-family: "AvenirLTStd-Light";
+  }
+  .avenir-medium {
+    font-family: "AvenirLTStd-Medium";
+  }
+  .avenir-roman {
+    font-family: "AvenirLTStd-Roman";
+  }
+    body {
+      margin: 0;
+    }
+    .container {
+      width: 600px;
+      max-width: 600px;
+      margin: 0 auto;
+      background-image: url('http://104.155.207.185:8090/images/bg-mail.jpg');
+      background-repeat-x: no-repeat;
+      background-repeat-y: repeat;
+      -webkit-background-size: contain;
+      background-size: contain;
+    }
+    .img-responsive {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    .heading-banner {
+      position: relative;
+    }
+    .logo-holder {
+      position: absolute;
+      top: 15px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+    .invitation-holder {
+      padding: 15px 25px;
+      background-color: #2c3757;
+      color: #fff;
+      text-align: center;
+    }
+    .invitation-holder h3 { margin: 0 0 10px; }
+    .invitation-holder p { margin: 0; }
+    .main-sec {
+      padding: 10px 25px;
+    }
+    .snapshot {
+      padding: 15px 0;
+      background-color: rgba(0,0,0,0.7);
+      color: #fff;
+    }
+    .snapshot h4 { margin: 0; }
+    .click-link {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .social-share {
+      padding: 15px 0;
+      background-color: rgba(255,255,255,0.8);
+      text-align: center;
+    }
+    .social-share ul {
+      padding: 0;
+      margin: 0;
+    }
+    .social-share ul li {
+      margin: 0 6px;
+      display: inline-block;
+      list-style-type: none;
+    }
+    .travel-strip {
+      width: 300px;
+      height: 4px;
+      background-color: #ef645e;
+    }
+    .local-strip {
+      width: 300px;
+      height: 4px;
+      background-color: #4fd4ca;
+    }
+    h1 { margin: 0; }
+
+    /*media query*/
+    @media (max-width: 480px) {
+      /*.logo-holder {
+        img { width: 65px; }
+      }*/
+      .msg-sec h3 { font-size: 16px; }
+      .msg-sec p { font-size: 12px; }
+      .social-share { padding: 10px 0; }
+      .social-share img { width: 20px; }
+      .travel-strip, .local-strip { height: 3px; }
+    }
+      .invitation-holder {
+        padding: 15px 10px;
+      }
+    }
+    /*media query end*/
+  </style>
+</head>
+<body>
+  <table class="container" cellspacing="0" cellpadding="0" width="600">
+    <tbody>
+      <!-- header banner holder -->
+      <tr>
+        <td>
+          <div class="heading-banner">
+            <img src="http://104.155.207.185:8090/images/emailer-img/banner.jpg" alt="Banner" width="600" class="img-responsive">
+          </div>
+        </td>
+      </tr>
+      <!-- header banner holder end-->
+      <!-- invitation-holder -->
+      <tr>
+        <td class="invitation-holder">
+          <div class="msg-sec">
+            <h3><span class="avenir-roman">Hello</span> <span class="avenir-medium">Amit Verma</span></h3>
+            <p class="avenir-roman">You have a request from Monish to follow your travels and local activities on TraveLibro. To confirm this request <a href="" target="_blank" class="click-link">click here</a>.</p>
+          </div>
+        </td>
+      </tr>
+      <!-- invitation-holder end -->
+      <!-- social page link -->
+      <tr>
+        <td>
+          <div class="social-share">
+            <ul>
+              <li><a href="" target="_blank" title="Facebook"><img src="http://104.155.207.185:8090/images/emailer-img/facebook-off.png" alt="Facebook" class="img-responsive" width="34"></a></li>
+              <li><a href="" target="_blank" title="Twitter"><img src="http://104.155.207.185:8090/images/emailer-img/twitter-off.png" alt="Twitter" class="img-responsive" width="34"></a></li>
+              <li><a href="" target="_blank" title="Google Plus"><img src="http://104.155.207.185:8090/images/emailer-img/google-plus-off.png" alt="Google Plus" class="img-responsive" width="34"></a></li>
+              <li><a href="" target="_blank" title="Pinterest"><img src="http://104.155.207.185:8090/images/emailer-img/pinterest-off.png" alt="Pinterest" class="img-responsive" width="34"></a></li>
+              <li><a href="" target="_blank" title="Instagram"><img src="http://104.155.207.185:8090/images/emailer-img/instagram-off.png" alt="Instagram" class="img-responsive"></a></li>
+              <li><a href="" target="_blank" title="Linkedin"><img src="http://104.155.207.185:8090/images/emailer-img/linkedin-off.png" alt="Linkedin" class="img-responsive" width="34"></a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <!-- social page link end-->
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" width="600">
+            <tbody>
+              <tr>
+                <td class="travel-strip"></td>
+                <td class="local-strip"></td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
