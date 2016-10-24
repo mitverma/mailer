@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.css" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="list-country-visited">
+     <div class="row">
+       <div class="col-md-3" ng-repeat="country in countryList">
+        <div class="country-list-holder">
+          <div class="list-imgholder">
+            <img ng-src="{{country.countryImage}}" alt="{{country.countryName}}" class="img-responsive">
+            <div class="list-info">
+              <div class="clearfix">
+                <div class="pull-left">
+                  <h4>{{country.countryName}}</h4>
+                </div>
+                <div class="pull-right">
+                  <div class="bucket-flag">
+                    <img ng-src="{{country.countryFlag}}" alt="{{bucket.countryName}}" class="img-responsive">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+     </div>
+  </div>
+<div class="bucket-list-main">
+  <div class="row">
+    <div class="col-md-3" ng-repeat="bucket in bucketList track by $index">
+      <div class="bucket-list-holder">
+        <div class="list-imgholder">
+          <img ng-src="{{bucket.countryImage}}" alt="{{bucket.countryName}}" class="img-responsive">
+          <div class="list-info">
+            <div class="clearfix">
+              <div class="pull-left">
+                <h4>{{bucket.countryName}}</h4>
+              </div>
+              <div class="pull-right">
+                <div class="bucket-flag">
+                  <img ng-src="{{bucket.countryFlag}}" alt="{{bucket.countryName}}" class="img-responsive">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
