@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  window.onload = function(){
+    var userAgent =  navigator.userAgent || navigator.vendor || window.opera;
+    if(/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream){
+      window.open("https://itunes.apple.com/in/app/travelibro/id1056641759");
+    }else if(/android/i.test(userAgent)){
+      window.open("https://play.google.com/store/apps/details?id=com.ascra.app.travellibro");
+    }else if(/windows phone/i.test(userAgent)) {
+      window.open("https://www.travelibro.com");
+    }else {
+      window.open("https://www.travelibro.com");
+    }
+  }
+  </script>
+</body>
+</html>
