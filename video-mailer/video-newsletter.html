@@ -20,7 +20,10 @@
             <tr>
                 <td style="padding: 10px 0 10px 7px;">
                     <span style="color: #4fd4ca;"><b>|</b></span>
-                    <span style="color: #ffffff">For<b> *|FNAME|* *|LNAME|*</b></span>
+                    <span style="color: #ffffff">For<b>
+                        *|IF:FNAME|* *|FNAME|* *|IF:LNAME|* *|LNAME|* *|END:IF|*,
+                        *|ELSE:|* You *|END:IF|*
+                    </b></span>
 
                 </td>
             </tr>
