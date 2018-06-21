@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Marck+Script|Pacifico|Satisfy|Space+Mono" rel="stylesheet">
+	<title>Document</title>
+	<style>
+	/*font-family: 'Pacifico', cursive;
+	font-family: 'Satisfy', cursive;
+	font-family: 'Marck Script', cursive;
+	font-family: 'Space Mono', monospace;*/
+	.img-responsive {
+		max-width: 100%;
+		height: auto;
+	}
+	.blur-img {
+		-webkit-filter: blur(1px);
+		-o-filter: blur(1px);
+		filter: blur(1px);
+	}
+	.background {
+		position: relative;
+		overflow: hidden;
+	}
+	.background:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(35,35,35,0.6);
+	}
+	.all-detail {
+		width: 80%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		text-align: center;
+		z-index: 1;
+		color: #fff;
+	}
+	.name {
+		font-family: 'Satisfy', cursive;
+	}
+	.all-detail p {
+		margin: 0 0 3px;
+		font-family: 'Space Mono', monospace;
+		font-size: 14px;
+	}
+	.all-detail h2 {
+		margin: 20px 0;
+		font-size: 40px;
+	}
+</style>
+</head>
+<body>
+	<main>
+		<div class="background">
+			<img src="http://www.shaadishades.com/wp-content/uploads/2017/12/DSC_3444.jpg" alt="" class="img-responsive blur-img">
+			<div class="all-detail">
+				<h2 class="name">Amit Verma</h2>
+				<p class="venue-detail">Invite you to celebrate their engagement on</p>
+				<p>Saturday 23 <sup>rd</sup> June 2018 at 11:30 AM</p>
+				<p>Lunch to be followed from 1 to 3 pm</p>
+				<h2>Venue</h2>
+				<p>Chintamani Hall, Vaidya Wadi, Subhash Chowk Kalyan West</p>
+			</div>
+		</div>
+	</main>
+</body>
+</html>
