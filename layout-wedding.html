@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Marck+Script|Pacifico|Satisfy|Space+Mono" rel="stylesheet">
+	<title>Document</title>
+	<style>
+    /*font-family: 'Pacifico', cursive;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Marck Script', cursive;
+    font-family: 'Space Mono', monospace;*/
+    .img-responsive {
+    	max-width: 100%;
+    	height: auto;
+    }
+    .blur-img {
+    	-webkit-filter: blur(2px);
+    	-o-filter: blur(2px);
+    	filter: blur(2px);
+    }
+    .background {
+    	position: relative;
+    	overflow: hidden;
+    }
+    .background:after {
+    	content: '';
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	right: 0;
+    	bottom: 0;
+    	background-color: rgba(35,35,35,0.6);
+    }
+    .all-detail {
+    	width: 80%;
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	transform: translate(-50%,-50%);
+    	text-align: center;
+    	z-index: 1;
+    	color: #fff;
+    }
+    .name {
+    	font-family: 'Satisfy', cursive;
+    }
+    .all-detail p {
+    	margin: 0 0 3px;
+    	font-family: 'Space Mono', monospace;
+    	font-size: 14px;
+    }
+    .heading {
+    	font-family: 'Marck Script', cursive;
+    	font-size: 48px;
+    	margin: 10px 0;
+    	color: #ff7464;
+    }
+    .heading + p {
+    	font-family: 'Pacifico', cursive;
+    	font-size: 22px;
+    }
+    .all-detail h2 {
+    	margin: 15px 0;
+    	font-size: 38px;
+    }
+    .couple {
+    	background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #fa2222), color-stop(0.15, #fd0da8), color-stop(0.3, #738296), color-stop(0.45, #3bce91), color-stop(0.6, #40d3ff),color-stop(0.75, #25ff22), color-stop(0.9, #c3e021), color-stop(1, #090606) );
+    	background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+    	color: transparent;
+    	-webkit-background-clip: text;
+    	background-clip: text;
+    }
+</style>
+</head>
+<body>
+	<main>
+		<div class="background">
+			<img src="https://d3btuubl2bvm9d.cloudfront.net/images/c6919e44979511e3b14f0e2f866a9102/1419857883797_web.jpg" alt="" class="img-responsive blur-img">
+			<div class="all-detail">
+				<h1 class="heading">Ashok & Sadhana Khairnar</h1>
+				<p>Request you to grace the auspicious occasion of <br> the engagement of their daughter</p>
+				<h2 class="name couple">Leena Khairnar to Kalpesh Nikumbh</h2>
+				<p class="venue-detail">Invite you to celebrate their engagement on</p>
+				<p>Saturday 23 <sup>rd</sup> June 2018 at 11:30 AM</p>
+				<p>Lunch to be followed from 1 to 3 pm</p>
+				<h2 class="name">Venue</h2>
+				<p>Chintamani Hall, Vaidya Wadi, <br> Subhash Chowk Kalyan West</p>
+			</div>
+		</div>
+	</main>
+</body>
+</html>
