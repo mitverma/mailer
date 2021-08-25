@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <title>Resume</title>
+    <style>
+        * {
+            font-family: 'Lato', sans-serif;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            padding: 0;
+            border: 0;
+            margin: 0;
+        }
+
+        header, main {
+            max-width: 1320px;
+            margin: 0 auto;
+
+        }
+        header {
+            padding: 26px;
+            background-color: #005050;
+        }
+        header h1 { 
+            margin: 0 0 15px;
+            color: #fff;
+            letter-spacing: 1.5px;
+        }
+        header h4 { 
+            margin: 0;
+            color: #fff;
+            letter-spacing: 1.5px;
+        }
+        header ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            text-align: right;
+        }
+        header ul li {
+            margin: 0 0 10px;
+            font-weight: 600;
+            font-size: 14px;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+        header ul li .icon {
+            margin-left: 10px;
+        }
+        .heading {
+            min-width: 40%;
+        }
+        .clearfix {
+            overflow: auto;
+        }
+        .left {
+            float: left;
+        }
+        .right {
+            float: right;
+        }
+        main {
+            /* padding: 26px; */
+        }
+
+        .detailed-info {
+            width: 60%;
+            padding: 26px;
+            float: left;
+        }
+        
+        .company-list {
+            margin: 18px 0;
+        }
+        .company-name { margin: 0; }
+        .designation { margin: 5px 0 0; }
+        .more-info {
+            font-size: 14px;
+            font-weight: bold;
+            color: #005050;
+        }
+        .company {
+            padding-bottom: 25px;
+            border-bottom: 1px solid #005050;
+            margin-bottom: 50px;
+        }
+
+        .project {
+            padding: 0 0 15px;
+            border-bottom: 1px dashed #005050;
+            margin-bottom: 25px;
+        }
+
+        .project.first {
+            padding: 15px 0;
+        }
+
+        .project:last-child {
+            border-bottom: none;
+            margin: 0;
+        }
+
+        .project > h3 {
+            margin: 0 0 15px;
+            font-size: 15px;
+        }
+        .project ul {
+            padding-left: 20px;
+        }
+        .project ul li {
+            margin-bottom: 15px;
+        }
+
+        .project-list > h2 {
+            padding: 10px;
+            background-color: #005050;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .basic-info {
+            width: 40%;
+            padding: 26px;
+            float: left;
+        }
+
+        .duration {
+            font-weight: 700;
+            font-style: italic;
+            font-size: 14px;
+            color: #005050;
+        }
+
+        .summary {
+            margin-bottom: 50px;
+        }
+
+        .summary h2, section > h2 {
+            margin: 0;
+            border-bottom: 1px solid #005050;
+            padding: 0 0 15px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+        }
+
+        .summary p {
+            line-height: 1.7;
+        }
+
+        .skills {
+            margin-bottom: 50px;
+        }
+
+        .skill-list {
+            margin: 16px 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skill-list span {
+            padding: 9px;
+            border-radius: 5px;
+            margin: 5px;
+            display: inline-block;
+            background-color: #005050;
+            color: #fff;
+            text-align: center;
+        }
+
+        .education { margin-bottom: 50px; }
+
+        .educ-info {
+            margin: 18px 0;
+        }
+
+        .educ-info h3 { 
+            margin: 0;
+            font-weight: normal;
+        }
+
+        .additional-data p span {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="clearfix">
+        <div class="left heading">
+            <h1>Amit Verma</h1>
+            <h4>Software Engineer</h4>
+        </div>
+        <div class="right">
+            <ul>
+                <li>8655568110 / 7021385449 <i class="fas fa-mobile icon"></i></li>
+                <li>amitverma951994@gmail.com <i class="fas fa-envelope icon"></i></li>
+                <li>github.com/mitverma <i class="fab fa-github icon"></i></li>
+                <li>Mumbai, India <i class="fas fa-map-marker-alt icon"></i></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main>
+   <div class="clearfix main-wrapper">
+        <div class="detailed-info">
+            <section class="experience">
+                <h2>Experience</h2>
+                <div class="company-list">
+                    <div class="company">
+                        <div class="clearfix heading">
+                            <div class="left">
+                                <h3 class="company-name">Mphasis Pvt Ltd.</h3>
+                                <p class="designation">Senior Frontend Developer <span class="more-info">(SBI Client, Belapur)</span></p>
+                            </div>
+                            <div class="right">
+                                <p class="duration">11/2019 - Present</p>
+                            </div>
+                        </div>
+                        <div class="company-detail">
+                            <div class="project-list">
+                                <h2>Projects</h2>
+                                <div class="project first">
+                                    <h3>SBI-RLMS : Home Loan</h3>
+                                    <ul>
+                                        <li>Home Loan is a retail loan product basically used by SBI to provide retail loans to customers.</li>
+                                        <li>My role in development is for Customer Details Module, Upload Documents Module, View Documents Module, Vendor Verification Module, Document Execution and several more Modules.</li>
+                                        <li>From Calling RestApi, functionality, Designing development and Business understanding till handling UAT & Production issues</li>
+                                    </ul>
+                                </div>
+                                <div class="project">
+                                    <h3>SBI-RLMS : Gold & Pension Loan</h3>
+                                    <ul>
+                                        <li>Gold & Pension loan is a retail loan product basically used by SBI to provide retail loans to customers.</li>
+                                        <li>My role in development is for CBS & BRMS response Module, Documents Module, Gold Module, Document Execution and several more Modules</li>
+                                        <li>From Calling RestApi, functionality, Designing development and Business understanding till handling UAT & Production issues</li>
+                                    </ul>
+                                </div>
+                                <div class="project">
+                                    <h3>SBI-RLMS : Xpress Credit</h3>
+                                    <ul>
+                                        <li>Xpress Credit is a retail loan product basically used by SBI to provide retail loans to customers.</li>
+                                        <li>My role in development is for Employment Verification, Branch Manager Task Module, Customer Details, Document Execution.</li>
+                                        <li>From Calling RestApi, functionality, Designing development and Business understanding till handling UAT & Production issues</li>
+                                    </ul>
+                                </div>
+                                <div class="project">
+                                    <h3>SBI-RLMS : Smart Home TopUp Loan</h3>
+                                    <ul>
+                                        <li>Smart Home TopUp Loan it's just and addon for HomeLoan which is used by SBI to provide retail loans to customers.</li>
+                                        <li>My role in development is for Customer Details Module, Upload Documents Module, Processing Officer Module & Document Execution.</li>
+                                        <li>From Calling RestApi, functionality, Designing development and Business understanding till handling UAT & Production issues</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company">
+                        <div class="clearfix heading">
+                            <div class="left">
+                                <h3 class="company-name">Robinhood Pvt Ltd.</h3>
+                                <p class="designation">Senior Software Developer</p>
+                            </div>
+                            <div class="right">
+                                <p class="duration">01/2018 - 10/2019</p>
+                            </div>
+                        </div>
+                        <div class="company-detail">
+                            <div class="project-list">
+                                <h2>Projects</h2>
+                                <div class="project">
+                                    <h3>OneInsure OneGo <span class="more-info">(Ionic 3)</span></h3>
+                                    <ul>
+                                        <li>OneGo is where a user can be an Full time or Part time agent and sell the insurance policies for customer.</li>
+                                        <li>Developed whole OneGo App with dashboard Module,Exam Module, My Customers, KYC of agent, with some native features like Camers, Share, InAppBrowser, Toasters, Backbutton</li>
+                                    </ul>
+                                </div>
+                                <div class="project">
+                                    <h3>Oneinsure Website <span class="more-info">(Angular 5)</span> </h3>
+                                    <ul>
+                                        <li>Oneinsure Website is where a customer can buy Insurance like Term, Two Wheeler, Car, Short Term Insurance and money more.</li>
+                                        <li>My role in development is for Two Wheeler Insurance Module , Short Term, Child Insurance.</li>
+                                        <li>From Calling RestApi, functionality, Designing development and Business understanding</li>
+                                    </ul>
+                                </div>
+                                <div class="project">
+                                    <h3>Oneinsure App <span class="more-info">(Ionic 3)</span></h3>
+                                    <ul>
+                                        <li>Oneinusre App is a platform where a user can track cliam request , policies, due dates, add nominee & other features</li>
+                                        <li>My role in development is on My policies Module, Locatores, Renew Policy Module, with some native features like Camers, Share, InAppBrowser, Toasters, Backbutton</li>
+                                    </ul>
+                                </div>
+                                <div class="project">
+                                        <h3>Oneinsure SalesApp <span class="more-info">(Ionic 1)</span></h3>
+                                    <ul>
+                                        <li>Oneinsure SalesApp is for sales manager, where he can track the sales, visit, renwal and all basics information of User and policies</li>
+                                        <li>My role in development is on Policy Management Module and tracking all information of users entered by sales manager.</li>
+                                    </ul>
+                                </div>
+                                <div class="project">
+                                        <h3>Chat Application <span class="more-info">(Firebase & Ionic)</span></h3>
+                                    <ul>
+                                        <li>Chat Application is for Internal use as per company requirment for Telecalling team.</li>
+                                        <li>Developed whole Firebase chat application with features Group Chat, One-to-One Chat, Image uploading & updating user personal info</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company">
+                        <div class="clearfix heading">
+                            <div class="left">
+                                <h3 class="company-name">Travelibro Pvt Ltd.</h3>
+                                <p class="designation">Web Developer</p>
+                            </div>
+                            <div class="right">
+                                <p class="duration">08/2016 - 01/2018</p>
+                            </div>
+                        </div>
+                        <div class="company-detail">
+                            <div class="project-list">
+                                <h2>Projects</h2>
+                                <div class="project">
+                                    <h3>Travelibro Website <span class="more-info">(Angular JS)</span></h3>
+                                    <ul>
+                                        <li>TraveLibro is an app that lets you discover, create and relive visual travel journeys.</li>
+                                        <li>Determining the structure and design of web pages converting PSD to HTML, writing logics, RestApi calling and handling all over website development and changes</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company">
+                        <div class="clearfix heading">
+                            <div class="left">
+                                <h3 class="company-name">Wohlig Transformation Pvt Ltd.</h3>
+                                <p class="designation">Web Developer</p>
+                            </div>
+                            <div class="right">
+                                <p class="duration">08/2016 - 01/2018</p>
+                            </div>
+                        </div>
+                        <div class="company-detail">
+                            <div class="project-list">
+                                <h2>Projects</h2>
+                                <div class="project">
+                                    <h3>Jaipur Pink Panther <span class="more-info">(Angular JS)</span></h3>
+                                    <ul>
+                                        <li>Jaipur Pink Panthers is a professional kabaddi team which belongs to Pink City of India Jaipur, competes in Pro Kabaddi League which is a professional Kabaddi league in India.</li>
+                                        <li>Determining the structure and design of web pages converting PSD to HTML, responsive web design for Cross Browser platform</li>
+                                    </ul>
+                                </div>
+                                <div class="project">
+                                    <h3>SFA Now <span class="more-info">(Angular JS)</span></h3>
+                                    <ul>
+                                        <li>SFA now is the largest professional sport event & tournament for athletes from Schools</li>
+                                        <li>Determining the structure and design of web pages converting PSD to HTML, responsive web design for Cross Browser platform</li>
+                                    </ul>
+                                </div>
+                                <div class="project">
+                                    <h3>Dharma Production <span class="more-info">(Angular JS)</span></h3>
+                                    <ul>
+                                        <li>Dharma Production website is for upcoming movies, shows & events</li>
+                                        <li>Determining the structure and design of web pages converting PSD to HTML, responsive web design for Cross Browser platform</li>
+                                    </ul>
+                                </div>
+                                <div class="project">
+                                    <h3>Smaassh <span class="more-info">(Angular JS & Ionic)</span></h3>
+                                    <ul>
+                                        <li>Smaassh website & App is where we can book a game , enquiry for event</li>
+                                        <li>Determining the structure and design of web pages converting PSD to HTML, responsive web design for Cross Browser platform</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="basic-info">
+            <section class="summary">
+                <h2>Summary</h2>
+                <p>Implementing web design and development principles to build stable software. Bringing mock-ups to life using HTML, CSS, and Frontend framework collaborating closely with the team to support projects during all phases of delivery.</p>
+            </section>
+            <section class="skills">
+                <h2>Skills</h2>
+                <div class="skill-list">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>SCSS</span>
+                    <span>Bootstrap</span>
+                    <span>Javascript</span>
+                    <span>Angular Framework</span>
+                    <span>Angular Material</span>
+                    <span>Firebase</span>
+                    <span>Jquery</span>
+                    <span>Ionic Framework</span>
+                    <span>GraphQl</span>
+                    <span>Node JS</span>
+                    <span>MongoDB</span>
+                </div>
+            </section>
+            <section class="education">
+                <h2>Education</h2>
+                <div class="educ-info">
+                    <h3>KJ Somaiya of Sci & Com (BSC-IT)</h3>
+                    <p class="duration">06/2012 - 06/2015</p>
+                </div>
+            </section>
+            <section class="version-control skills">
+                <h2>Version Control</h2>
+                <div class="version-list skill-list">
+                    <span>Github</span>
+                    <span>SVN</span>
+                    <span>Bitbucket</span>
+                </div>
+            </section>
+            <section class="project-info skills">
+                <h2>Project Management</h2>
+                <div class="project-info-list skill-list">
+                    <span>JIRA</span>
+                    <span>Open-Project</span>
+                </div>
+            </section>
+            <section class="additional-info">
+                <h2>Additional Information</h2>
+                <div class="additional-data">
+                    <p><span>Languages</span> :  Hindi, English, Marathi</p>
+                    <p><span>Inerests</span> :  Cricket, Travelling, Dancing, Music</p>
+                </div>
+            </section>
+        </div>
+   </div>
+</main>
+</body>
+</html>
